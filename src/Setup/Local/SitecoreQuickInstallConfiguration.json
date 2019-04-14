@@ -1,0 +1,58 @@
+{
+  "system": {
+    "hosting": "OnPrem",
+    "sitecoreMode": "XP",
+    "serverRole": "AllInOneQuickly"
+  },
+  "installPackage": "C:\\SAF_FILES\\Sitecore 9.1.1 rev. 002459 (WDP XP0 packages).zip",
+  "license": "C:\\SAF_FILES\\license.xml",
+  "prefix": "sitecore_reports",
+  "sitecore": {
+    "version": "9.1.1",
+    "hostNames": [
+      "sitecorereports.local"
+    ],
+    "installDir": "C:\\Projects\\sitecore-experience-analytics-reports\\src\\Website",
+    "adminPassword": "b"
+  },
+  "xConnect": {
+    "hostName": "xconnect.sitecorereports.local",
+    "installDir": "C:\\Projects\\sitecore-experience-analytics-reports\\src\\XConnect",
+    "machineLearningServer": { // Optional
+      "url": "",
+      "blobEndpointCertificatePath": "",
+      "blobEndpointCertificatePassword": "",
+      "tableEndpointCertificatePath": "",
+      "tableEndpointCertificatePassword": "",
+      "endpointCertificationAuthorityCertificatePath": ""
+    }
+  },
+  "identityServer": {
+    "hostName": "identity.sitecorereports.local",
+    "installDir": "C:\\Projects\\sitecore-experience-analytics-reports\\src\\Identity",
+    "clientSecret": "Test123"
+  },
+  "exm": {
+    "edsProviderURL": "", // Optional
+    "cryptographicKey": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "authenticationKey": "0x0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "search": {
+    "solr": {
+      "version": "7.2.1",
+      "installDir": "C:\\Projects\\sitecore-experience-analytics-reports\\src\\Solr",
+      "hostName": "solr.sitecorereports.local",
+      "port": "9006",
+      "serviceName": "solr-sitecorereports",
+      "serviceDisplayName": "solr-sitecorereports",
+      "serviceDescription": "solr-sitecorereports"
+    }
+  },
+  "sql": {
+    "serverName": ".\\SQL2017",
+    "adminUsername": "SAFAdmin",
+    "adminPassword": "Pass123",
+    "sitecorePassword": "Pass123"
+  },
+  "telerikEncryptionKey": "PutYourCustomEncryptionKeyHereFrom32To256CharactersLong"
+}
